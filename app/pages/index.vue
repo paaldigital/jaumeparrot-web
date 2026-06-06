@@ -4,20 +4,20 @@ useSeoMeta({
   description: 'Desarrollador web freelance especializado en Vue/Nuxt, React/Next.js, Node.js y APIs. Construyo aplicaciones modernas y escalables para startups y empresas.',
   ogTitle: 'Jaume Parrot — Desarrollador Freelance',
   ogDescription: 'Aplicaciones web modernas, APIs robustas y experiencias digitales que funcionan.',
-  ogImage: 'https://jaumeparrot.com/og-image.png',
-  ogUrl: 'https://jaumeparrot.com',
+  ogImage: 'https://www.jaumeparrot.com/og-image.png',
+  ogUrl: 'https://www.jaumeparrot.com',
   ogType: 'website',
   ogLocale: 'es_ES',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Jaume Parrot — Desarrollador Freelance',
   twitterDescription: 'Aplicaciones web modernas, APIs robustas y experiencias digitales que funcionan.',
-  twitterImage: 'https://jaumeparrot.com/og-image.png',
+  twitterImage: 'https://www.jaumeparrot.com/og-image.png',
   robots: 'index, follow',
 })
 
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://jaumeparrot.com' },
+    { rel: 'canonical', href: 'https://www.jaumeparrot.com' },
   ],
   script: [
     {
@@ -26,7 +26,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: 'Jaume Parrot',
-        url: 'https://jaumeparrot.com',
+        url: 'https://www.jaumeparrot.com',
         jobTitle: 'Desarrollador Freelance',
         description: 'Desarrollador web freelance especializado en Vue/Nuxt, React/Next.js, Node.js y APIs.',
         knowsAbout: ['Vue.js', 'Nuxt.js', 'React', 'Next.js', 'Node.js', 'TypeScript', 'APIs REST'],

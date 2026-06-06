@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
 
   site: {
-    url: 'https://jaumeparrot.com',
+    url: 'https://www.jaumeparrot.com',
     name: 'Jaume Parrot — Desarrollador Freelance',
   },
 
