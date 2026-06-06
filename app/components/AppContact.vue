@@ -1,13 +1,24 @@
 <script setup lang="ts">
-const { pending, error, execute } = useLazyAsyncData('contact', async () => {}, { immediate: false })
-
 const form = reactive({ name: '', email: '', message: '' })
 const submitted = ref(false)
+const pending = ref(false)
+const errorMsg = ref('')
 
 async function handleSubmit() {
-  // TODO: Replace with your real email API (Resend, Formspree, etc.)
-  await new Promise(r => setTimeout(r, 600))
-  submitted.value = true
+  pending.value = true
+  errorMsg.value = ''
+
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: { ...form },
+    })
+    submitted.value = true
+  } catch {
+    errorMsg.value = 'Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo.'
+  } finally {
+    pending.value = false
+  }
 }
 </script>
 
@@ -75,14 +86,25 @@ async function handleSubmit() {
           />
         </div>
 
+        <div v-if="errorMsg" class="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-600">
+          {{ errorMsg }}
+        </div>
+
         <button
           type="submit"
-          class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-base transition-colors duration-200 shadow-lg shadow-brand-600/20"
+          :disabled="pending"
+          class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-base transition-colors duration-200 shadow-lg shadow-brand-600/20"
         >
-          Enviar mensaje
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+          <svg v-if="pending" class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
           </svg>
+          <template v-else>
+            Enviar mensaje
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>
+          </template>
         </button>
       </form>
 
