@@ -25,7 +25,7 @@ const projects = [
   <section id="proyectos" class="bg-white py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <span class="text-indigo-600 text-sm font-semibold uppercase tracking-widest">Portfolio</span>
+        <span class="text-brand-600 text-sm font-semibold uppercase tracking-widest">Portfolio</span>
         <h2 class="mt-3 text-4xl md:text-5xl font-bold text-slate-900">Proyectos destacados</h2>
         <p class="mt-4 text-slate-500 text-lg max-w-xl mx-auto">
           Una selección de proyectos que demuestran lo que puedo construir para ti.
@@ -36,10 +36,10 @@ const projects = [
         <article
           v-for="project in projects"
           :key="project.title"
-          class="group flex flex-col rounded-2xl bg-white border border-slate-200 hover:border-indigo-300 hover:shadow-lg overflow-hidden transition-all duration-300"
+          class="group flex flex-col rounded-2xl bg-white border border-slate-200 hover:border-brand-300 hover:shadow-lg overflow-hidden transition-all duration-300"
         >
           <!-- Placeholder image -->
-          <div class="h-44 bg-gradient-to-br from-indigo-100 to-violet-100 flex items-center justify-center">
+          <div class="h-44 bg-gradient-to-br from-brand-100 to-navy-100 flex items-center justify-center">
             <span class="text-5xl opacity-60">💻</span>
           </div>
 
@@ -51,13 +51,13 @@ const projects = [
               <span
                 v-for="tag in project.stack"
                 :key="tag"
-                class="px-2.5 py-1 rounded-md bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-medium"
+                class="px-2.5 py-1 rounded-md bg-brand-50 border border-brand-200 text-brand-700 text-xs font-medium"
               >{{ tag }}</span>
             </div>
 
             <a
               :href="project.url"
-              class="inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-800 font-medium transition-colors"
+              class="inline-flex items-center gap-1.5 text-sm text-brand-600 hover:text-brand-700 font-medium transition-colors"
             >
               Ver proyecto
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

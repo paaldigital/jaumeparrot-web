@@ -15,7 +15,6 @@ useSeoMeta({
     <main>
       <AppHero />
       <AppServices />
-      <AppTech />
       <AppProjects />
       <AppProcess />
       <AppContact />

@@ -27,7 +27,7 @@ const steps = [
   <section id="proceso" class="bg-slate-50 py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <span class="text-indigo-600 text-sm font-semibold uppercase tracking-widest">Proceso</span>
+        <span class="text-brand-600 text-sm font-semibold uppercase tracking-widest">Proceso</span>
         <h2 class="mt-3 text-4xl md:text-5xl font-bold text-slate-900">¿Cómo trabajo?</h2>
         <p class="mt-4 text-slate-500 text-lg max-w-xl mx-auto">
           Un proceso transparente para que sepas exactamente qué esperar en cada fase.

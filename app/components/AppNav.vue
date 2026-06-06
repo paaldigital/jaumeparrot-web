@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const links = [
   { label: 'Servicios', href: '#servicios' },
-  { label: 'Tecnologías', href: '#tecnologias' },
   { label: 'Proyectos', href: '#proyectos' },
   { label: 'Proceso', href: '#proceso' },
   { label: 'Contacto', href: '#contacto' },
@@ -14,7 +13,7 @@ const isMenuOpen = ref(false)
   <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
     <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="text-slate-900 font-bold text-lg tracking-tight">
-        jaumeparrot<span class="text-indigo-600">.com</span>
+        jaumeparrot<span class="text-brand-600">.com</span>
       </a>
 
       <!-- Desktop links -->
@@ -29,7 +28,7 @@ const isMenuOpen = ref(false)
 
       <a
         href="#contacto"
-        class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition-colors duration-200"
+        class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium transition-colors duration-200"
       >
         Hablemos
       </a>
@@ -60,7 +59,7 @@ const isMenuOpen = ref(false)
       >{{ link.label }}</a>
       <a
         href="#contacto"
-        class="mt-2 inline-flex justify-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium"
+        class="mt-2 inline-flex justify-center px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 text-white text-sm font-medium"
         @click="isMenuOpen = false"
       >Hablemos</a>
     </div>

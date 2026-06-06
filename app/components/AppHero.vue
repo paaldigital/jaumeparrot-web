@@ -1,20 +1,32 @@
 <template>
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-indigo-50 pt-16">
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-brand-50 pt-16">
     <!-- Gradient background -->
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-indigo-200/50 rounded-full blur-3xl" />
-      <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-violet-200/40 rounded-full blur-3xl" />
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-200/50 rounded-full blur-3xl" />
+      <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-navy-200/40 rounded-full blur-3xl" />
     </div>
 
-    <div class="relative max-w-4xl mx-auto px-6 py-24 text-center">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-300 bg-indigo-50 text-indigo-600 text-sm mb-8">
-        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
-        Disponible para nuevos proyectos
-      </span>
+    <div class="relative max-w-5xl mx-auto px-6 py-24">
+      <!-- Photo + badge -->
+      <div class="flex flex-col items-center mb-8">
+        <div class="relative mb-6">
+          <img
+            src="/jaume.jpg"
+            alt="Jaume Parrot"
+            class="w-32 h-32 rounded-full object-cover shadow-xl ring-4 ring-white ring-offset-2 ring-offset-brand-100"
+          />
+          <span class="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-green-400 border-2 border-white" title="Disponible" />
+        </div>
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-300 bg-brand-50 text-brand-600 text-sm">
+          <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
+          Disponible para nuevos proyectos
+        </span>
+      </div>
 
+      <div class="text-center">
       <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight tracking-tight mb-6">
         Hola, soy<br />
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-navy-500 to-brand-500">
           Jaume Parrot
         </span>
       </h1>
@@ -28,7 +40,7 @@
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a
           href="#contacto"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-lg transition-colors duration-200 shadow-lg shadow-indigo-600/30"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-lg transition-colors duration-200 shadow-lg shadow-brand-600/30"
         >
           Contacta conmigo
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,6 +53,7 @@
         >
           Ver proyectos
         </a>
+      </div>
       </div>
 
       <div class="mt-20 flex flex-wrap items-center justify-center gap-8 text-slate-500 text-sm">

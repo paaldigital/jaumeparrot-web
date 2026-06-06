@@ -37,7 +37,7 @@ const services = [
   <section id="servicios" class="bg-white py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <span class="text-indigo-600 text-sm font-semibold uppercase tracking-widest">Servicios</span>
+        <span class="text-brand-600 text-sm font-semibold uppercase tracking-widest">Servicios</span>
         <h2 class="mt-3 text-4xl md:text-5xl font-bold text-slate-900">¿En qué puedo ayudarte?</h2>
         <p class="mt-4 text-slate-500 text-lg max-w-xl mx-auto">
           Ofrezco servicios end-to-end para llevar tu idea desde cero hasta producción.
@@ -48,7 +48,7 @@ const services = [
         <div
           v-for="service in services"
           :key="service.title"
-          class="group p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-indigo-300 hover:bg-white hover:shadow-md transition-all duration-300"
+          class="group p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-300 hover:bg-white hover:shadow-md transition-all duration-300"
         >
           <span class="text-4xl mb-4 block">{{ service.icon }}</span>
           <h3 class="text-slate-900 font-semibold text-xl mb-2">{{ service.title }}</h3>
