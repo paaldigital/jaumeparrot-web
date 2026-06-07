@@ -8,12 +8,12 @@ const steps = [
   {
     number: '02',
     title: 'Propuesta',
-    description: 'Preparo una propuesta detallada con alcance, tecnologías, plazos y presupuesto claro.',
+    description: 'Preparo una propuesta detallada con alcance, plazos y presupuesto claro.',
   },
   {
     number: '03',
     title: 'Desarrollo',
-    description: 'Desarrollo iterativo con updates regulares y acceso al repositorio para que veas el progreso en todo momento.',
+    description: 'Desarrollo iterativo con updates regulares para que veas el progreso en todo momento.',
   },
   {
     number: '04',

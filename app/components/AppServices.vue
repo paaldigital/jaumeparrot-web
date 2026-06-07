@@ -3,31 +3,16 @@ const services = [
   {
     icon: '🖥️',
     title: 'Aplicaciones Web',
-    description: 'Desarrollo de SPAs y SSR con Vue/Nuxt o React/Next.js. Rápidas, accesibles y fáciles de mantener.',
+    description: 'Aplicaciones web rápidas, accesibles y fáciles de mantener.',
   },
   {
-    icon: '⚙️',
-    title: 'APIs & Backend',
-    description: 'APIs RESTful y GraphQL con Node.js. Arquitectura limpia, segura y lista para escalar.',
-  },
-  {
-    icon: '🎨',
-    title: 'UI / Frontend',
-    description: 'Implementación de diseños pixel-perfect, sistemas de diseño y componentes reutilizables.',
-  },
-  {
-    icon: '🗄️',
-    title: 'Bases de datos',
-    description: 'Diseño y optimización de esquemas con PostgreSQL, MySQL o MongoDB. Migraciones y consultas eficientes.',
-  },
-  {
-    icon: '☁️',
-    title: 'Despliegue & DevOps',
-    description: 'CI/CD, Docker, Vercel, Railway o VPS. Tu aplicación en producción, estable y monitorizada.',
+    icon: '📱',
+    title: 'Apps Híbridas',
+    description: 'Aplicaciones móviles para iOS y Android con una sola base de código. Mismo resultado, menos coste.',
   },
   {
     icon: '🔍',
-    title: 'Consultoría técnica',
+    title: 'Consultoría Técnica',
     description: 'Revisión de código, arquitectura de proyectos y asesoramiento para tomar las decisiones técnicas correctas.',
   },
 ]

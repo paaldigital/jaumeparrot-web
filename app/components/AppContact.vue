@@ -107,18 +107,6 @@ async function handleSubmit() {
           </template>
         </button>
       </form>
-
-      <div class="mt-8 flex flex-wrap justify-center gap-6 text-slate-400 text-sm">
-        <a href="mailto:hola@jaumeparrot.com" class="hover:text-brand-400 transition-colors">
-          hola@jaumeparrot.com
-        </a>
-        <a href="https://github.com/jaumeparrot" target="_blank" rel="noopener" class="hover:text-brand-400 transition-colors">
-          GitHub
-        </a>
-        <a href="https://linkedin.com/in/jaumeparrot" target="_blank" rel="noopener" class="hover:text-brand-400 transition-colors">
-          LinkedIn
-        </a>
-      </div>
     </div>
   </section>
 </template>

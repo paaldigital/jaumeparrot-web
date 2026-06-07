@@ -33,8 +33,8 @@
 
       <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
         Desarrollador freelance especializado en construir
-        <strong class="text-slate-800">aplicaciones web modernas</strong>,
-        APIs robustas y experiencias digitales que funcionan.
+        <strong class="text-slate-800">aplicaciones web modernas</strong>
+        y experiencias digitales que funcionan.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -54,23 +54,6 @@
           Ver proyectos
         </a>
       </div>
-      </div>
-
-      <div class="mt-20 flex flex-wrap items-center justify-center gap-8 text-slate-500 text-sm">
-        <div class="flex flex-col items-center gap-1">
-          <span class="text-3xl font-bold text-slate-900">5+</span>
-          <span>Años de experiencia</span>
-        </div>
-        <div class="w-px h-10 bg-slate-300 hidden sm:block" />
-        <div class="flex flex-col items-center gap-1">
-          <span class="text-3xl font-bold text-slate-900">30+</span>
-          <span>Proyectos entregados</span>
-        </div>
-        <div class="w-px h-10 bg-slate-300 hidden sm:block" />
-        <div class="flex flex-col items-center gap-1">
-          <span class="text-3xl font-bold text-slate-900">100%</span>
-          <span>Clientes satisfechos</span>
-        </div>
       </div>
     </div>
   </section>
